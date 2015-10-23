@@ -1,0 +1,352 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Korean resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_KOR)
+#ifdef _WIN32
+LANGUAGE LANG_KOREAN, SUBLANG_DEFAULT
+#pragma code_page(949)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_KOR)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 18, 1\r\n"
+    "#pragma code_page(949)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\DFOpenMind.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""l.kor\\afxres.rc""          // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON    DISCARDABLE     "res\\DFOpenMind.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOG DISCARDABLE  0, 0, 235, 55
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "DFOpenMind 정보"
+FONT 9, "굴림"
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,11,17,20,20
+    LTEXT           "DFOpenMind 버전 1.0",IDC_STATIC,40,10,119,8,SS_NOPREFIX
+    LTEXT           "Copyright (C) 2001[DeepDark]",IDC_STATIC,40,25,119,8
+    DEFPUSHBUTTON   "확인",IDOK,178,7,50,14,WS_GROUP
+END
+
+IDD_DFOPENMIND_DIALOG DIALOGEX 0, 0, 399, 331
+STYLE DS_MODALFRAME | WS_MINIMIZEBOX | WS_POPUP | WS_VISIBLE | WS_CAPTION | 
+    WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "DFOpenMind"
+FONT 9, "굴림"
+BEGIN
+    DEFPUSHBUTTON   "&Search",IDC_SEARCH,270,256,58,21
+    PUSHBUTTON      "E&xit",IDC_EXIT,333,302,59,21
+    CONTROL         "Tree1",IDC_USERTREE,"SysTreeView32",TVS_HASBUTTONS | 
+                    TVS_HASLINES | TVS_LINESATROOT | WS_BORDER | WS_TABSTOP,
+                    7,7,104,226
+    CONTROL         "List1",IDC_FILELIST,"SysListView32",LVS_REPORT | 
+                    WS_BORDER | WS_TABSTOP,112,7,280,226
+    GROUPBOX        " File Search ",IDC_STATIC,7,236,257,87
+    PUSHBUTTON      "&Download",IDC_DOWNLOAD,270,279,58,21
+    PUSHBUTTON      "Con&fig",IDC_CONFIG,333,279,59,21
+    COMBOBOX        IDC_USER,77,261,117,13,CBS_DROPDOWN | CBS_SORT | 
+                    WS_DISABLED | WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        IDC_NAME,77,247,117,12,ES_AUTOHSCROLL
+    CONTROL         "By &Name",IDC_CHECK_NAME,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,12,247,53,14
+    CONTROL         "By &User",IDC_CHECK_USER,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,12,261,53,14
+    CONTROL         "By D&ate",IDC_CHECK_DATE,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,12,276,53,14
+    CONTROL         "By Si&ze",IDC_CHECK_SIZE,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,12,291,53,14
+    CONTROL         "By Ext&ension",IDC_CHECK_EXTENTION,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,12,305,53,14
+    CONTROL         "DateTimePicker1",IDC_DATE_MIN,"SysDateTimePick32",
+                    DTS_RIGHTALIGN | WS_DISABLED | WS_TABSTOP,77,276,52,14
+    EDITTEXT        IDC_MINSIZE,77,291,43,14,ES_AUTOHSCROLL | WS_DISABLED
+    EDITTEXT        IDC_MAXSIZE,142,291,43,14,ES_AUTOHSCROLL | WS_DISABLED
+    CTEXT           "-",IDC_STATIC,133,291,8,14,SS_CENTERIMAGE
+    CTEXT           "KB",IDC_STATIC,120,291,12,13,SS_CENTERIMAGE
+    CTEXT           "KB",IDC_STATIC,185,291,10,13,SS_CENTERIMAGE
+    EDITTEXT        IDC_EXTENTION,77,307,117,12,ES_AUTOHSCROLL | WS_DISABLED
+    CONTROL         "DateTimePicker1",IDC_DATE_MAX,"SysDateTimePick32",
+                    DTS_RIGHTALIGN | WS_DISABLED | WS_TABSTOP,143,276,51,14
+    CTEXT           "-",IDC_STATIC,132,276,9,14,SS_CENTERIMAGE
+    CONTROL         "Creation",IDC_RADIO_CREATION,"Button",
+                    BS_AUTORADIOBUTTON | WS_DISABLED,207,263,39,11
+    GROUPBOX        " Date Of ",IDC_STATIC,201,249,59,69
+    CONTROL         "Access",IDC_RADIO_ACCESS,"Button",BS_AUTORADIOBUTTON | 
+                    WS_DISABLED,207,280,43,11
+    CONTROL         "Modification",IDC_RADIO_MODIFY,"Button",
+                    BS_AUTORADIOBUTTON | WS_DISABLED,207,297,51,11
+    PUSHBUTTON      "&Transfer Status",IDC_STATUS,333,256,59,21
+    PUSHBUTTON      "&Connect",IDC_CONNECT,270,302,58,21
+    CTEXT           "Author : deepdark@archblitz.com",IDC_STATIC,270,239,122,
+                    12,SS_CENTERIMAGE,WS_EX_STATICEDGE
+END
+
+IDD_PROGRESS_DIALOG DIALOGEX 0, 0, 298, 251
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "DFOpenMind Transfer Status"
+FONT 9, "굴림", 0, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "&OK",IDOK,231,228,60,16
+    CONTROL         "List1",IDC_SEND_PROGRESS_LIST,"SysListView32",
+                    LVS_REPORT | WS_BORDER | WS_TABSTOP,7,24,284,85
+    CONTROL         "List1",IDC_RECV_PROGRESS_LIST,"SysListView32",
+                    LVS_REPORT | WS_BORDER | WS_TABSTOP,7,136,284,85
+    CTEXT           "Send Status",IDC_STATIC,7,7,229,16,SS_CENTERIMAGE,
+                    WS_EX_STATICEDGE
+    CTEXT           "Receive Status",IDC_STATIC,7,119,229,16,SS_CENTERIMAGE,
+                    WS_EX_STATICEDGE
+    PUSHBUTTON      "Abort",IDC_ABORT_SEND,240,7,51,16,WS_DISABLED
+    PUSHBUTTON      "Abort",IDC_ABORT_RECV,240,119,51,16,WS_DISABLED
+    CTEXT           "Hongik Univ. Computer Engineering. 9311116. Choi, In-Ho",
+                    IDC_STATIC,7,228,220,16,SS_CENTERIMAGE,WS_EX_STATICEDGE
+END
+
+IDD_NEWUSER_DIALOG DIALOGEX 0, 0, 254, 105
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Register New User"
+FONT 9, "굴림", 0, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "&OK",IDOK,197,7,50,14
+    PUSHBUTTON      "&Cancel",IDCANCEL,197,24,50,14
+    CTEXT           "User ID ",IDC_STATIC,7,7,49,15,SS_CENTERIMAGE,
+                    WS_EX_STATICEDGE
+    CTEXT           "Password",IDC_STATIC,7,26,49,15,SS_CENTERIMAGE,
+                    WS_EX_STATICEDGE
+    CTEXT           "Address",IDC_STATIC,7,45,49,15,SS_CENTERIMAGE,
+                    WS_EX_STATICEDGE
+    CTEXT           "Telephone",IDC_STATIC,7,64,49,15,SS_CENTERIMAGE,
+                    WS_EX_STATICEDGE
+    CTEXT           "E-Mail",IDC_STATIC,7,82,49,15,SS_CENTERIMAGE,
+                    WS_EX_STATICEDGE
+    EDITTEXT        IDC_NEWUSER_ID,58,7,78,15,ES_AUTOHSCROLL
+    EDITTEXT        IDC_NEWUSER_PWD,58,26,78,15,ES_PASSWORD | ES_AUTOHSCROLL
+    EDITTEXT        IDC_NEWUSER_ADDR,58,45,189,15,ES_AUTOHSCROLL
+    EDITTEXT        IDC_NEWUSER_PHONE,58,64,114,15,ES_AUTOHSCROLL
+    EDITTEXT        IDC_NEWUSER_MAIL,58,82,189,15,ES_AUTOHSCROLL
+END
+
+IDD_LOGIN_DIALOG DIALOGEX 0, 0, 187, 69
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "DFOpenMind Login"
+FONT 9, "굴림"
+BEGIN
+    DEFPUSHBUTTON   "&Login",IDOK,130,7,50,15
+    PUSHBUTTON      "&Cancel",IDCANCEL,130,25,50,15
+    CTEXT           "UserID",IDC_STATIC,7,7,38,15,SS_CENTERIMAGE,
+                    WS_EX_STATICEDGE
+    CTEXT           "Password",IDC_STATIC,7,25,38,15,SS_CENTERIMAGE,
+                    WS_EX_STATICEDGE
+    EDITTEXT        IDC_LOGIN_USER,48,7,79,15,ES_AUTOHSCROLL
+    EDITTEXT        IDC_LOGIN_PASSWORD,48,25,79,15,ES_PASSWORD | 
+                    ES_AUTOHSCROLL
+    CONTROL         "&Use this ID later",IDC_CHECK_REG,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,7,48,173,14
+END
+
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "041204b0"
+        BEGIN
+            VALUE "Comments", "\0"
+            VALUE "CompanyName", "\0"
+            VALUE "FileDescription", "DFOpenMind MFC 응용 프로그램\0"
+            VALUE "FileVersion", "1, 0, 0, 1\0"
+            VALUE "InternalName", "DFOpenMind\0"
+            VALUE "LegalCopyright", "Copyright (C) 2001\0"
+            VALUE "LegalTrademarks", "\0"
+            VALUE "OriginalFilename", "DFOpenMind.EXE\0"
+            VALUE "PrivateBuild", "\0"
+            VALUE "ProductName", "DFOpenMind 응용 프로그램\0"
+            VALUE "ProductVersion", "1, 0, 0, 1\0"
+            VALUE "SpecialBuild", "\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x412, 1200
+    END
+END
+
+#endif    // !_MAC
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 228
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 48
+    END
+
+    IDD_DFOPENMIND_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 392
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 324
+    END
+
+    IDD_PROGRESS_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 291
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 244
+    END
+
+    IDD_NEWUSER_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 247
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 98
+    END
+
+    IDD_LOGIN_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 180
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 62
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MENU1 MENU DISCARDABLE 
+BEGIN
+    POPUP "PopUp"
+    BEGIN
+        MENUITEM "Show Dialog",                 ID_SHOWDIALOG
+        MENUITEM "Exit",                        ID_EXIT
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_ABOUTBOX            "DFOpenMind 정보(&A)..."
+END
+
+#endif    // Korean resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_KOR)
+#ifdef _WIN32
+LANGUAGE 18, 1
+#pragma code_page(949)
+#endif //_WIN32
+#include "res\DFOpenMind.rc2"  // non-Microsoft Visual C++ edited resources
+#include "l.kor\afxres.rc"          // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

@@ -1,0 +1,43 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: DFOpenMindServiceTest - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\DOCUME~1\UNKNOW~1\LOCALS~1\Temp\RSP18.tmp" with contents
+[
+/nologo /MTd /W3 /Gm /GX /ZI /Od /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_MBCS" /D "_MFC_USED" /Fp"Debug/DFOpenMindServiceTest.pch" /Yu"stdafx.h" /Fo"Debug/" /Fd"Debug/" /FD /GZ /c 
+"D:\ECE455 Project\Visual C++ Sample\4. p2p\DFOpenMind - work1\DFOpenMind\DFOpenMindServiceTest\DFOpenMindCore.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\UNKNOW~1\LOCALS~1\Temp\RSP18.tmp" 
+Creating temporary file "C:\DOCUME~1\UNKNOW~1\LOCALS~1\Temp\RSP19.tmp" with contents
+[
+ws2_32.lib /nologo /subsystem:windows /incremental:yes /pdb:"Debug/DFOpenMindServiceTest.pdb" /debug /machine:I386 /out:"Debug/DFOpenMindServiceTest.exe" /pdbtype:sept 
+".\Debug\DFDispatcher.obj"
+".\Debug\DFDRQueue.obj"
+".\Debug\DFFileDB.obj"
+".\Debug\DFMapPtrToPtr.obj"
+".\Debug\DFOpenMindCore.obj"
+".\Debug\DFOpenMindServiceTest.obj"
+".\Debug\DFOpenMindServiceTestDlg.obj"
+".\Debug\DFServerSock.obj"
+".\Debug\DFTimeChecker.obj"
+".\Debug\DFUserDB.obj"
+".\Debug\StdAfx.obj"
+".\Debug\DFOpenMindServiceTest.res"
+]
+Creating command line "link.exe @C:\DOCUME~1\UNKNOW~1\LOCALS~1\Temp\RSP19.tmp"
+<h3>Output Window</h3>
+Compiling...
+DFOpenMindCore.cpp
+Linking...
+
+
+
+<h3>Results</h3>
+DFOpenMindServiceTest.exe - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>

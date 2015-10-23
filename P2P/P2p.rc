@@ -1,0 +1,708 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Korean resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_KOR)
+#ifdef _WIN32
+LANGUAGE LANG_KOREAN, SUBLANG_DEFAULT
+#pragma code_page(949)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_KOR)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 18, 1\r\n"
+    "#pragma code_page(949)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\P2p.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""l.kor\\afxres.rc""          // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON    DISCARDABLE     "res\\P2p.ico"
+IDR_P2PTYPE             ICON    DISCARDABLE     "res\\P2pDoc.ico"
+IDI_ICON_TRAY_DISCONNECT ICON    DISCARDABLE     "res\\TrayDisconnected.ico"
+IDI_ICON_TRAY_CONNECT   ICON    DISCARDABLE     "res\\TrayConnected.ico"
+IDI_ICON_STATUS_DOWNLOADS ICON    DISCARDABLE     "res\\Upload.ico"
+IDI_ICON_STATUS_SERVERCOUNT ICON    DISCARDABLE     "res\\serverCount.ico"
+IDI_ICON_STATUS_UPLOADS ICON    DISCARDABLE     "res\\Download.ico"
+IDI_ICON_STATUS_HARD    ICON    DISCARDABLE     "res\\HardDisk.ico"
+IDI_ICON_VIEW_SEARCH    ICON    DISCARDABLE     "res\\ADLSearch.ico"
+IDI_ICON_VIEW_SERVER    ICON    DISCARDABLE     "res\\ServerInfo.ico"
+IDI_ICON_VIEW_CHAT      ICON    DISCARDABLE     "res\\Chat.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDR_MAINFRAME           BITMAP  MOVEABLE PURE   "res\\Toolbar.bmp"
+IDB_TOOLBAR_1           BITMAP  DISCARDABLE     "res\\p2pToolbar_1.bmp"
+IDB_TOOLBAR_2           BITMAP  DISCARDABLE     "res\\p2pToolbar_2.bmp"
+IDB_TOOLBAR_DISABLE     BITMAP  DISCARDABLE     "res\\p2pToolbar_Disable.bmp"
+IDB_BITMAP_CONNECT_TITLE BITMAP  DISCARDABLE     "res\\connect_title.bmp"
+IDB_SKIN_MSN            BITMAP  DISCARDABLE     "res\\skinmsn.bmp"
+IDB_BITMAP_PREFERENCE_TAB BITMAP  DISCARDABLE     "res\\preference_icon.bmp"
+IDB_BITMAP_SEARCH_TAB   BITMAP  DISCARDABLE     "res\\searchTabIcon.bmp"
+IDB_BITMAP_LIST_LIBRARY_CONNECT BITMAP  DISCARDABLE     "res\\connectListIcon.bmp"
+IDB_BITMAP_MESSAGE_TITLE BITMAP  DISCARDABLE     "res\\message_title.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Toolbar
+//
+
+IDR_MAINFRAME TOOLBAR DISCARDABLE  65, 45
+BEGIN
+    BUTTON      ID_SERVER_CONNECT
+    SEPARATOR
+    BUTTON      ID_MENU_SEARCH
+    BUTTON      ID_MENU_DOWNLOADS
+    BUTTON      ID_MENU_UPLOADS
+    BUTTON      ID_MENU_SERVER
+    BUTTON      ID_MENU_CHAT
+    SEPARATOR
+    BUTTON      ID_MENU_PREFERENCES
+    BUTTON      ID_APP_ABOUT
+    BUTTON      ID_MENU_TEMP
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MAINFRAME MENU PRELOAD DISCARDABLE 
+BEGIN
+    POPUP "파일(&F)"
+    BEGIN
+        MENUITEM "접속하기",                    ID_MENU_SERVER_CONNECT
+        MENUITEM "접속해제",                    ID_MENU_SERVER_DISCONNECT
+        MENUITEM SEPARATOR
+        MENUITEM "종료(&X)",                    ID_APP_EXIT
+    END
+    POPUP "편집(&E)"
+    BEGIN
+        MENUITEM "취소(&U)\tCtrl+Z",            ID_EDIT_UNDO
+        MENUITEM SEPARATOR
+        MENUITEM "잘라내기(&T)\tCtrl+X",        ID_EDIT_CUT
+        MENUITEM "복사(&C)\tCtrl+C",            ID_EDIT_COPY
+        MENUITEM "붙여넣기(&P)\tCtrl+V",        ID_EDIT_PASTE
+    END
+    POPUP "보기(&V)"
+    BEGIN
+        MENUITEM "도구 모음(&T)",               ID_VIEW_TOOLBAR
+        MENUITEM "상태 표시줄(&S)",             ID_VIEW_STATUS_BAR
+    END
+    POPUP "도움말(&H)"
+    BEGIN
+        MENUITEM "P2peer 정보(&A)...",          ID_APP_ABOUT
+    END
+    POPUP "옵션(&O)"
+    BEGIN
+        MENUITEM "환경설정",                    ID_MENU_PREFERENCES
+    END
+END
+
+IDR_MENU_TRAY MENU DISCARDABLE 
+BEGIN
+    POPUP "파일(&F)"
+    BEGIN
+        MENUITEM "접속하기",                    ID_MENU_SERVER_CONNECT
+        MENUITEM "접속해제",                    ID_MENU_SERVER_DISCONNECT
+        MENUITEM SEPARATOR
+        MENUITEM "환경설정",                    ID_MENU_PREFERENCES
+        MENUITEM SEPARATOR
+        MENUITEM "P2peer 정보(&A)...",          ID_APP_ABOUT
+        MENUITEM SEPARATOR
+        MENUITEM "종료(&X)",                    ID_APP_EXIT
+    END
+END
+
+IDR_MENU_SERVER_LIBRARY MENU DISCARDABLE 
+BEGIN
+    POPUP "Popup"
+    BEGIN
+        MENUITEM "Insert",                      ID_SERVER_LIBRARY_INSERT
+        MENUITEM "Delete",                      ID_SERVER_LIBRARY_DELETE
+    END
+END
+
+IDR_MENU_TAB_SEARCH MENU DISCARDABLE 
+BEGIN
+    POPUP "Popup"
+    BEGIN
+        MENUITEM "Delete",                      ID_TAB_SEARCH_DELETE
+    END
+END
+
+IDR_MENU_TAB_UPDOWN MENU DISCARDABLE 
+BEGIN
+    POPUP "Popup"
+    BEGIN
+        MENUITEM "Delete",                      ID_TAB_UPDOWN_DELETE
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Accelerator
+//
+
+IDR_MAINFRAME ACCELERATORS PRELOAD MOVEABLE PURE 
+BEGIN
+    "N",            ID_FILE_NEW,            VIRTKEY, CONTROL
+    "O",            ID_FILE_OPEN,           VIRTKEY, CONTROL
+    "S",            ID_FILE_SAVE,           VIRTKEY, CONTROL
+    "Z",            ID_EDIT_UNDO,           VIRTKEY, CONTROL
+    "X",            ID_EDIT_CUT,            VIRTKEY, CONTROL
+    "C",            ID_EDIT_COPY,           VIRTKEY, CONTROL
+    "V",            ID_EDIT_PASTE,          VIRTKEY, CONTROL
+    VK_BACK,        ID_EDIT_UNDO,           VIRTKEY, ALT
+    VK_DELETE,      ID_EDIT_CUT,            VIRTKEY, SHIFT
+    VK_INSERT,      ID_EDIT_COPY,           VIRTKEY, CONTROL
+    VK_INSERT,      ID_EDIT_PASTE,          VIRTKEY, SHIFT
+    VK_F6,          ID_NEXT_PANE,           VIRTKEY 
+    VK_F6,          ID_PREV_PANE,           VIRTKEY, SHIFT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOG DISCARDABLE  0, 0, 307, 93
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "p2peer 정보"
+FONT 9, "굴림"
+BEGIN
+    LTEXT           "p2peer 버전 1.0",IDC_STATIC,18,45,119,8,SS_NOPREFIX
+    LTEXT           "Copyright (C) 2005 ",IDC_STATIC,18,58,119,8
+    DEFPUSHBUTTON   "확인",IDOK,248,66,50,14,WS_GROUP
+    CONTROL         152,IDC_STATIC,"Static",SS_BITMAP,0,0,307,32
+    GROUPBOX        "",IDC_STATIC,9,37,167,47
+    LTEXT           "Kwon Yong Jae (amadeusj@hanmail.net)",IDC_STATIC,18,71,
+                    154,8
+END
+
+IDD_P2P_FORM DIALOG DISCARDABLE  0, 0, 580, 410
+STYLE WS_CHILD
+FONT 9, "굴림"
+BEGIN
+    LTEXT           "메인CP2pView 클래스, 아직쓸데가 없음....",IDC_STATIC,24,
+                    42,280,8
+    PUSHBUTTON      "알림창보이기",IDC_BUTTON_TEST,46,75,61,23
+END
+
+IDD_DIALOG_CONNECT DIALOG DISCARDABLE  0, 0, 307, 299
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Connect"
+FONT 9, "굴림"
+BEGIN
+    CONTROL         "Client",IDC_RADIO_CLIENT,"Button",BS_AUTORADIOBUTTON | 
+                    WS_GROUP,169,60,34,10
+    CONTROL         "Server",IDC_RADIO_SERVER,"Button",BS_AUTORADIOBUTTON,
+                    223,60,37,10
+    EDITTEXT        IDC_EDIT_SERVERNAME,162,108,117,14,ES_AUTOHSCROLL
+    CONTROL         "IPAddress1",IDC_IPADDRESS_SERVERIP,"SysIPAddress32",
+                    WS_TABSTOP,162,149,65,14
+    EDITTEXT        IDC_EDIT_USERID,162,190,117,14,ES_AUTOHSCROLL
+    CONTROL         "View Folder",IDC_CHECK_VIEWFOLDER,"Button",
+                    BS_AUTOCHECKBOX | WS_GROUP | WS_TABSTOP,162,221,54,10
+    CONTROL         "List2",IDC_LIST_SERVER,"SysListView32",LVS_REPORT | 
+                    LVS_SHOWSELALWAYS | WS_BORDER | WS_TABSTOP,7,41,144,201
+    DEFPUSHBUTTON   "Connect",IDC_BUTTON_CONNECT,125,270,50,16
+    PUSHBUTTON      "New",IDC_BUTTON_NEW,58,270,50,16
+    PUSHBUTTON      "Cancel",IDCANCEL,192,270,50,16
+    GROUPBOX        "",IDC_STATIC,155,37,145,206
+    LTEXT           "Server Name",IDC_STATIC,162,96,43,8
+    LTEXT           "Server IP",IDC_STATIC,162,137,30,8
+    LTEXT           "User ID",IDC_STATIC,162,178,24,8
+    GROUPBOX        "",IDC_STATIC,161,47,132,32
+    CONTROL         152,IDC_STATIC,"Static",SS_BITMAP,0,0,307,32
+END
+
+IDD_DIALOG_PREFERENCES DIALOG DISCARDABLE  0, 0, 283, 289
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Preferences"
+FONT 9, "굴림"
+BEGIN
+    CONTROL         "Tab1",IDC_TAB_OPTION,"SysTabControl32",0x0,7,40,268,220
+    DEFPUSHBUTTON   "OK",IDOK,82,266,50,16
+    PUSHBUTTON      "Cancel",IDCANCEL,148,266,50,16
+    CONTROL         152,IDC_STATIC,"Static",SS_BITMAP,0,0,307,32
+END
+
+IDD_SEARCH_VIEW DIALOG DISCARDABLE  0, 0, 580, 410
+STYLE WS_CHILD
+FONT 9, "굴림"
+BEGIN
+    CONTROL         "List1",IDC_LIST_SEARCH,"SysListView32",LVS_REPORT | 
+                    LVS_SHOWSELALWAYS | WS_BORDER | WS_TABSTOP,19,59,543,335
+    CONTROL         "Tab1",IDC_TAB_SEARCH,"SysTabControl32",0x0,7,39,566,364
+    EDITTEXT        IDC_EDIT_SEARCHKEY,163,10,117,14,ES_AUTOHSCROLL
+    COMBOBOX        IDC_COMBO_SERVERFILTER,35,10,121,56,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    DEFPUSHBUTTON   "Search",IDC_BUTTON_SEARCH,290,10,50,14
+    GROUPBOX        "",IDC_STATIC,7,2,342,26
+    ICON            IDI_ICON_VIEW_SEARCH,IDC_STATIC,9,7,20,20,SS_CENTERIMAGE | 
+                    SS_REALSIZEIMAGE
+END
+
+IDD_DOWNLOADS_VIEW DIALOG DISCARDABLE  0, 0, 580, 410
+STYLE WS_CHILD
+FONT 9, "굴림"
+BEGIN
+    CONTROL         "List1",IDC_LIST_DOWNLOADS,"SysListView32",LVS_REPORT | 
+                    LVS_SHOWSELALWAYS | WS_BORDER | WS_TABSTOP,7,34,566,369
+    LTEXT           "Downloads (2/10)",IDC_STATIC_STATE,28,13,59,8
+    GROUPBOX        "",IDC_STATIC,7,2,101,26
+    ICON            IDI_ICON_STATUS_UPLOADS,IDC_STATIC,9,7,20,20,
+                    SS_CENTERIMAGE | SS_REALSIZEIMAGE
+END
+
+IDD_UPLOADS_VIEW DIALOG DISCARDABLE  0, 0, 580, 410
+STYLE WS_CHILD
+FONT 9, "굴림"
+BEGIN
+    CONTROL         "List1",IDC_LIST_UPLOADS,"SysListView32",LVS_REPORT | 
+                    LVS_SHOWSELALWAYS | WS_BORDER | WS_TABSTOP,7,34,566,369
+    LTEXT           "Uploads (2/10)",IDC_STATIC_STATE,28,13,49,8
+    ICON            IDI_ICON_STATUS_DOWNLOADS,IDC_STATIC,9,6,20,20,
+                    SS_CENTERIMAGE | SS_REALSIZEIMAGE
+    GROUPBOX        "",IDC_STATIC,7,2,101,26
+END
+
+IDD_SERVER_VIEW DIALOG DISCARDABLE  0, 0, 580, 410
+STYLE WS_CHILD
+FONT 9, "굴림"
+BEGIN
+    CONTROL         "List1",IDC_LIST_SERVER,"SysListView32",LVS_REPORT | 
+                    LVS_SHOWSELALWAYS | WS_BORDER | WS_TABSTOP,7,34,164,369
+    LTEXT           "Server (2/10)",IDC_STATIC_STATE,28,13,43,8
+    GROUPBOX        "",IDC_STATIC,7,2,101,26
+    ICON            IDI_ICON_VIEW_SERVER,IDC_STATIC,9,7,20,20,SS_CENTERIMAGE | 
+                    SS_REALSIZEIMAGE
+    CONTROL         "Tree1",IDC_TREE_EXPLORER,"SysTreeView32",TVS_HASBUTTONS | 
+                    TVS_HASLINES | TVS_LINESATROOT | WS_BORDER | WS_TABSTOP,
+                    178,34,169,369
+    CONTROL         "List1",IDC_LIST_SELECT,"SysListView32",LVS_REPORT | 
+                    LVS_SHOWSELALWAYS | WS_BORDER | WS_TABSTOP,360,47,206,
+                    238
+    EDITTEXT        IDC_EDIT_LOG,360,313,206,84,ES_MULTILINE | 
+                    ES_AUTOVSCROLL | ES_AUTOHSCROLL | WS_VSCROLL | 
+                    WS_HSCROLL
+    GROUPBOX        "Log",IDC_STATIC,354,302,219,101
+    GROUPBOX        "Selected",IDC_STATIC,354,34,219,259
+END
+
+IDD_DIALOG_MSN DIALOG DISCARDABLE  0, 0, 327, 317
+STYLE DS_MODALFRAME | WS_MINIMIZEBOX | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Chat"
+FONT 9, "굴림"
+BEGIN
+    EDITTEXT        IDC_EDIT_SEND,116,273,157,28,ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "Send",IDC_BUTTON_SEND,276,273,34,28
+    EDITTEXT        IDC_EDIT_CHAT,116,43,194,223,ES_MULTILINE | 
+                    ES_AUTOVSCROLL | WS_VSCROLL
+    CONTROL         "List1",IDC_LIST_SERVER,"SysListView32",LVS_LIST | 
+                    WS_BORDER | WS_TABSTOP,15,43,93,258
+    GROUPBOX        "",IDC_STATIC,7,34,312,276
+    CONTROL         200,IDC_STATIC,"Static",SS_BITMAP,0,0,327,32
+END
+
+IDD_TAB_SEARCH_VIEW_DETAIL DIALOG DISCARDABLE  0, 0, 544, 343
+STYLE WS_CHILD
+FONT 9, "굴림"
+BEGIN
+    CONTROL         "List1",IDC_LIST_SEARCH,"SysListView32",LVS_REPORT | 
+                    LVS_SHOWSELALWAYS | WS_BORDER | WS_TABSTOP,0,8,543,335
+END
+
+IDD_TAB_PREFERENCE_CONNECT DIALOGEX 0, 0, 263, 202
+STYLE WS_CHILD
+FONT 9, "굴림", 0, 0, 0x1
+BEGIN
+    CONTROL         "Slider1",IDC_SLIDER_DOWNLOAD,"msctls_trackbar32",
+                    TBS_AUTOTICKS | TBS_TOP | TBS_NOTICKS | WS_TABSTOP,13,40,
+                    214,18,WS_EX_STATICEDGE
+    CONTROL         "Slider1",IDC_SLIDER_UPLOAD,"msctls_trackbar32",
+                    TBS_AUTOTICKS | TBS_TOP | TBS_NOTICKS | WS_TABSTOP,13,94,
+                    214,18,WS_EX_STATICEDGE
+    LTEXT           "400 kb/s",IDC_STATIC_DOWNLOAD,55,25,28,8
+    GROUPBOX        "",IDC_STATIC,3,4,256,188
+    LTEXT           "다운로드",IDC_STATIC,16,25,28,8
+    LTEXT           "400 kb/s",IDC_STATIC_UPLOAD,55,79,28,8
+    LTEXT           "업로드",IDC_STATIC,16,79,22,8
+END
+
+IDD_TAB_PREFERENCE_DIRECTORY DIALOG DISCARDABLE  0, 0, 263, 203
+STYLE WS_CHILD
+FONT 9, "굴림"
+BEGIN
+    EDITTEXT        IDC_EDIT_TEMP,16,60,159,14,ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "찾기",IDC_BUTTON_TEMP,186,60,41,14
+    EDITTEXT        IDC_EDIT_INCOMING,16,98,159,14,ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "찾기",IDC_BUTTON_INCOMING,186,98,41,14
+    EDITTEXT        IDC_EDIT_SHAREFOLDER,16,136,159,14,ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "찾기",IDC_BUTTON_SHAREFOLDER,186,136,41,14
+    LTEXT           "받은파일",IDC_STATIC,16,84,28,8
+    LTEXT           "공유된디렉토리",IDC_STATIC,16,122,49,8
+    LTEXT           "100 / 2.5 GB",IDC_STATIC_FREE,76,25,127,8
+    GROUPBOX        "",IDC_STATIC,3,4,256,188
+    LTEXT           "임시파일",IDC_STATIC,16,46,28,8
+    LTEXT           "디스크남은공간",IDC_STATIC,16,25,49,8
+END
+
+IDD_TAB_PREFERENCE_DISPLAY DIALOG DISCARDABLE  0, 0, 263, 203
+STYLE WS_CHILD
+FONT 9, "굴림"
+BEGIN
+    CONTROL         "완료된파일을 목록에서 자동제거",
+                    IDC_CHECK_DELETE_COMPLETE,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,16,25,117,10
+    EDITTEXT        IDC_EDIT_POPUPTIME,100,45,19,14,ES_AUTOHSCROLL
+    CONTROL         "새로운 서버에 연결됨",IDC_CHECK_CONNECT,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,25,116,82,10
+    CONTROL         "다운로드 완료됨",IDC_CHECK_DOWNLOAD,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,25,91,66,10
+    CONTROL         "서버연결 끊김",IDC_CHECK_DISCONNECT,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,25,141,59,10
+    LTEXT           "메세지팝업지연시간 (초)",IDC_STATIC,16,49,78,8
+    GROUPBOX        "팝업메세지",IDC_STATIC,16,74,182,87
+    GROUPBOX        "",IDC_STATIC,3,4,256,188
+END
+
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "041204b0"
+        BEGIN
+            VALUE "Comments", "\0"
+            VALUE "CompanyName", "\0"
+            VALUE "FileDescription", "P2p MFC 응용 프로그램\0"
+            VALUE "FileVersion", "1, 0, 0, 1\0"
+            VALUE "InternalName", "P2p\0"
+            VALUE "LegalCopyright", "Copyright (C) 2005\0"
+            VALUE "LegalTrademarks", "\0"
+            VALUE "OriginalFilename", "P2p.EXE\0"
+            VALUE "PrivateBuild", "\0"
+            VALUE "ProductName", "P2p 응용 프로그램\0"
+            VALUE "ProductVersion", "1, 0, 0, 1\0"
+            VALUE "SpecialBuild", "\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x412, 1200
+    END
+END
+
+#endif    // !_MAC
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 300
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 86
+    END
+
+    IDD_P2P_FORM, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 573
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 403
+    END
+
+    IDD_DIALOG_CONNECT, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 300
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 292
+    END
+
+    IDD_DIALOG_PREFERENCES, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 276
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 282
+    END
+
+    IDD_SEARCH_VIEW, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 573
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 403
+    END
+
+    IDD_DOWNLOADS_VIEW, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 573
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 403
+    END
+
+    IDD_UPLOADS_VIEW, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 573
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 403
+    END
+
+    IDD_SERVER_VIEW, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 573
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 403
+    END
+
+    IDD_DIALOG_MSN, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 320
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 310
+    END
+
+    IDD_TAB_SEARCH_VIEW_DETAIL, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 537
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 337
+    END
+
+    IDD_TAB_PREFERENCE_CONNECT, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 256
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 195
+    END
+
+    IDD_TAB_PREFERENCE_DIRECTORY, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 256
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 196
+    END
+
+    IDD_TAB_PREFERENCE_DISPLAY, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 256
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 196
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDP_SOCKETS_INIT_FAILED "Windows 소켓 초기화에 실패하였습니다."
+END
+
+STRINGTABLE PRELOAD DISCARDABLE 
+BEGIN
+    IDR_MAINFRAME           "P2p\n\nP2p\n\n\nP2p.Document\nP2p Document"
+END
+
+STRINGTABLE PRELOAD DISCARDABLE 
+BEGIN
+    AFX_IDS_APP_TITLE       "p2peer"
+    AFX_IDS_IDLEMESSAGE     "준비"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_INDICATOR_EXT        "EXT"
+    ID_INDICATOR_CAPS       "CAP"
+    ID_INDICATOR_NUM        "NUM"
+    ID_INDICATOR_SCRL       "SCRL"
+    ID_INDICATOR_OVR        "OVR"
+    ID_INDICATOR_REC        "REC"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_APP_ABOUT            "프로그램 정보와 버전 정보, 저작권 정보를 표시합니다\n정보"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_WINDOW_SPLIT         "현재 열린 창을 나눕니다\n나누기"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_VIEW_TOOLBAR         "도구 모음을 보이거나 감춥니다\n도구 모음 전환"
+    ID_VIEW_STATUS_BAR      "상태 표시줄을 표시하거나 감춥니다\n상태 표시줄 전환"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    AFX_IDS_SCSIZE          "창의 크기를 변경합니다"
+    AFX_IDS_SCMOVE          "창의 위치를 변경합니다"
+    AFX_IDS_SCMINIMIZE      "창을 아이콘으로 줄여서 표시합니다"
+    AFX_IDS_SCMAXIMIZE      "창을 최대 크기로 확장합니다"
+    AFX_IDS_SCNEXTWINDOW    "다음 문서 창으로 전환합니다"
+    AFX_IDS_SCPREVWINDOW    "이전 문서 창으로 전환합니다"
+    AFX_IDS_SCCLOSE         "현재 열린 창을 닫고 문서를 저장할 것인지를 묻습니다"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    AFX_IDS_SCRESTORE       "창을 원래 크기로 복원합니다"
+    AFX_IDS_SCTASKLIST      "작업 목록을 활성화합니다"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_FILE_SEARCH          "파일을 검색합니다\nShow Search"
+    ID_OPTION_MODIFY        "환경설정 합니다\n환경설정"
+    ID_MENU_CHAT            "채팅을 합니다\n채팅"
+    ID_MENU_SEARCH          "파일을 검색합니다\n검색하기"
+    ID_MENU_DOWNLOADS       "다운로드중인 파일을 확인합니다\n다운로드"
+    ID_MENU_UPLOADS         "업로드중인 파일을 확인합니다\n업로드"
+    ID_MENU_SERVER          "서버의리스트를 확인합니다\n서버"
+    ID_MENU_PREPERENCES     "Preferences"
+    ID_MENU_PREFERENCES     "환경을 설정합니다\n환경설정"
+    ID_SERVER_CONNECT       "접속합니다\n접속하기"
+    ID_SERVER_DISCONNECT    "접속해제 합니다\n접속해제"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_FILE_OPEN            "다운로드 파일을 확인합니다\nShow Downloads"
+    ID_FILE_SAVE            "업로드 파일을 확인합니다\nShow Downloads"
+    ID_FILE_PRINT           "도움말을 확인합니다\nShow Help"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_EDIT_COPY            "선택 부분을 복사하여 클립보드에 넣습니다\n복사"
+    ID_EDIT_CUT             "선택 부분을 잘라내어 클립보드에 넣습니다\n잘라내기"
+    ID_EDIT_PASTE           "클립보드의 내용을 붙여 넣습니다\n붙여넣기"
+    ID_EDIT_UNDO            "마지막으로 한 동작을 취소합니다\n실행 취소"
+END
+
+#endif    // Korean resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_KOR)
+#ifdef _WIN32
+LANGUAGE 18, 1
+#pragma code_page(949)
+#endif //_WIN32
+#include "res\P2p.rc2"  // non-Microsoft Visual C++ edited resources
+#include "l.kor\afxres.rc"          // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
